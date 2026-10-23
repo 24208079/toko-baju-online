@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Toko Baju Online - front-end e-commerce sederhana (Tugas 7 E-Business System)">
+  <title>Produk - Toko Baju Online</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="product">
+  <header class="site-header" id="site-header"></header>
+  <main class="section container">
+    <section id="catalog-view" hidden aria-labelledby="h-katalog">
+      <h1 id="h-katalog">Katalog Produk</h1>
+      <div class="catalog-tools">
+        <div class="field"><label for="search">Cari produk</label><input type="search" id="search" placeholder="Contoh: kaos, kemeja"></div>
+        <div class="field"><label for="filter-cat">Kategori</label><select id="filter-cat"></select></div>
+        <div class="field"><label for="sort">Urutkan</label>
+          <select id="sort"><option value="">Default</option><option value="asc">Harga terendah</option><option value="desc">Harga tertinggi</option><option value="name">Nama A-Z</option></select></div>
+      </div>
+      <p class="muted" id="result-info" role="status"></p>
+      <div class="product-grid" id="product-grid"></div>
+    </section>
+    <section id="detail-view" hidden></section>
+  </main>
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

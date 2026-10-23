@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Toko Baju Online - front-end e-commerce sederhana (Tugas 7 E-Business System)">
+  <title>Checkout - Toko Baju Online</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="checkout">
+  <header class="site-header" id="site-header"></header>
+  <main class="section container">
+    <h1>Checkout</h1>
+    <ol class="stepper" aria-label="Tahapan checkout">
+      <li class="done">1. Keranjang</li><li class="current" aria-current="step">2. Data &amp; alamat</li><li>3. Pembayaran</li><li>4. Konfirmasi</li>
+    </ol>
+    <div id="checkout-wrap">
+      <div class="checkout-layout" id="co-body" hidden>
+        <form class="card" id="checkout-form" novalidate>
+          <h2>Data Penerima</h2>
+          <p class="hint">Tanda <span class="req">*</span> berarti wajib diisi.</p>
+          <div class="form-grid">
+            <div class="field"><label for="co-nama">Nama penerima <span class="req">*</span></label><input type="text" id="co-nama" autocomplete="name"><p class="error" id="err-co-nama" role="alert"></p></div>
+            <div class="field"><label for="co-email">Email <span class="req">*</span></label><input type="email" id="co-email" autocomplete="email"><p class="error" id="err-co-email" role="alert"></p></div>
+            <div class="field"><label for="co-hp">Nomor HP <span class="req">*</span></label><input type="tel" id="co-hp" placeholder="08xxxxxxxxxx" autocomplete="tel"><p class="error" id="err-co-hp" role="alert"></p></div>
+            <div class="field"><label for="co-kota">Kota <span class="req">*</span></label><input type="text" id="co-kota" autocomplete="address-level2"><p class="error" id="err-co-kota" role="alert"></p></div>
+            <div class="field full"><label for="co-alamat">Alamat lengkap <span class="req">*</span></label><textarea id="co-alamat" rows="3" placeholder="Jalan, nomor rumah, kelurahan"></textarea><p class="error" id="err-co-alamat" role="alert"></p></div>
+            <div class="field full"><label for="co-kurir">Kurir pengiriman <span class="req">*</span></label><select id="co-kurir"></select><p class="error" id="err-co-kurir" role="alert"></p></div>
+            <fieldset class="field full"><legend>Metode pembayaran <span class="req">*</span></legend><div class="radio-group" id="co-metode"></div><p class="error" id="err-co-metode" role="alert"></p></fieldset>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Buat Pesanan</button>
+            <a class="btn btn-secondary" href="cart.html">Kembali ke Keranjang</a>
+          </div>
+        </form>
+        <aside class="card summary" aria-label="Ringkasan pesanan">
+          <h2>Ringkasan Pesanan</h2>
+          <ul class="sum-list" id="co-list"></ul>
+          <div class="sum-row"><span>Subtotal</span><span id="co-sub">Rp0</span></div>
+          <div class="sum-row"><span>Ongkir</span><span id="co-ongkir">-</span></div>
+          <div class="sum-row sum-total"><span>Total</span><span id="co-total">Rp0</span></div>
+        </aside>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

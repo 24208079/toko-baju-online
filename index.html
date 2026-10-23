@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Toko Baju Online - front-end e-commerce sederhana (Tugas 7 E-Business System)">
+  <title>Home - Toko Baju Online</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+  <header class="site-header" id="site-header"></header>
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Baju pilihan, ukuran dan warna pas.</h1>
+          <p>Lihat stok per ukuran dan warna, pesan dalam beberapa langkah, lalu pantau status pesanan Anda.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="product.html">Belanja Sekarang</a>
+            <a class="btn btn-secondary" href="orders.html">Cek Status Pesanan</a>
+          </div>
+        </div>
+        <div class="hero-art" id="hero-art" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="section container" aria-labelledby="h-kategori">
+      <div class="section-head"><h2 id="h-kategori">Kategori</h2></div>
+      <div class="cat-grid">
+        <a class="card cat-link" href="product.html?cat=Kaos">Kaos</a>
+        <a class="card cat-link" href="product.html?cat=Kemeja">Kemeja</a>
+        <a class="card cat-link" href="product.html?cat=Celana">Celana</a>
+        <a class="card cat-link" href="product.html?cat=Jaket">Jaket</a>
+      </div>
+    </section>
+
+    <section class="section container" aria-labelledby="h-unggulan">
+      <div class="section-head"><h2 id="h-unggulan">Produk Unggulan</h2><a href="product.html">Lihat semua produk &rarr;</a></div>
+      <div class="product-grid" id="featured"></div>
+    </section>
+
+    <section class="section container" aria-labelledby="h-cara">
+      <div class="section-head"><h2 id="h-cara">Cara Berbelanja</h2></div>
+      <div class="step-grid">
+        <article class="card step"><h3>Pilih produk</h3><p class="muted">Tentukan ukuran dan warna.</p></article>
+        <article class="card step"><h3>Keranjang</h3><p class="muted">Atur jumlah belanja.</p></article>
+        <article class="card step"><h3>Checkout</h3><p class="muted">Isi alamat dan pilih kurir.</p></article>
+        <article class="card step"><h3>Bayar</h3><p class="muted">Transfer, e-wallet, atau QRIS.</p></article>
+        <article class="card step"><h3>Pantau</h3><p class="muted">Lihat status hingga barang tiba.</p></article>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Toko Baju Online - front-end e-commerce sederhana (Tugas 7 E-Business System)">
+  <title>Masuk - Toko Baju Online</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="login">
+  <header class="site-header" id="site-header"></header>
+  <main class="section container">
+    <div class="auth-box" id="auth-wrap">
+      <h1>Akun Customer</h1>
+      <div class="tabs" role="tablist">
+        <button type="button" class="tab" role="tab" data-tab="login" aria-selected="true">Masuk</button>
+        <button type="button" class="tab" role="tab" data-tab="register" aria-selected="false">Daftar</button>
+      </div>
+      <section class="card" id="panel-login">
+        <form id="form-login" novalidate>
+          <div class="field"><label for="lg-email">Email</label><input type="email" id="lg-email" autocomplete="email"><p class="error" id="err-lg-email" role="alert"></p></div>
+          <div class="field"><label for="lg-pass">Kata sandi</label><input type="password" id="lg-pass" autocomplete="current-password"><p class="error" id="err-lg-pass" role="alert"></p></div>
+          <button type="submit" class="btn btn-primary">Masuk</button>
+        </form>
+      </section>
+      <section class="card" id="panel-register" hidden>
+        <form id="form-register" novalidate>
+          <div class="field"><label for="rg-nama">Nama lengkap <span class="req">*</span></label><input type="text" id="rg-nama" autocomplete="name"><p class="error" id="err-rg-nama" role="alert"></p></div>
+          <div class="field"><label for="rg-email">Email <span class="req">*</span></label><input type="email" id="rg-email" autocomplete="email"><p class="error" id="err-rg-email" role="alert"></p></div>
+          <div class="field"><label for="rg-hp">Nomor HP <span class="req">*</span></label><input type="tel" id="rg-hp" placeholder="08xxxxxxxxxx"><p class="error" id="err-rg-hp" role="alert"></p></div>
+          <div class="field"><label for="rg-pass">Kata sandi <span class="req">*</span></label><input type="password" id="rg-pass" autocomplete="new-password"><p class="hint">Minimal 6 karakter.</p><p class="error" id="err-rg-pass" role="alert"></p></div>
+          <div class="field"><label for="rg-pass2">Konfirmasi kata sandi <span class="req">*</span></label><input type="password" id="rg-pass2" autocomplete="new-password"><p class="error" id="err-rg-pass2" role="alert"></p></div>
+          <button type="submit" class="btn btn-primary">Daftar</button>
+        </form>
+      </section>
+      <p class="hint" style="margin-top:1rem">Simulasi front-end: akun disimpan di browser ini saja. Autentikasi sesungguhnya (password_hash) dikerjakan di tahap back-end.</p>
+    </div>
+  </main>
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

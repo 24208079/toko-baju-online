@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Toko Baju Online - front-end e-commerce sederhana (Tugas 7 E-Business System)">
+  <title>Keranjang - Toko Baju Online</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="cart">
+  <header class="site-header" id="site-header"></header>
+  <main class="section container">
+    <h1>Keranjang Belanja</h1>
+    <div class="cart-layout">
+      <section class="card" aria-label="Isi keranjang" id="cart-box"></section>
+      <aside class="card summary" id="cart-summary" aria-label="Ringkasan belanja" hidden>
+        <h2>Ringkasan</h2>
+        <div class="sum-row"><span>Jumlah</span><span id="sum-items">0 item</span></div>
+        <div class="sum-row sum-total"><span>Subtotal</span><span id="sum-subtotal">Rp0</span></div>
+        <p class="hint">Ongkos kirim dihitung pada halaman checkout.</p>
+        <div class="form-actions" style="flex-direction:column">
+          <a class="btn btn-primary" href="checkout.html">Lanjut Checkout</a>
+          <a class="btn btn-secondary" href="product.html">Lanjut Belanja</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
