@@ -79,19 +79,19 @@ Centang setelah dicoba di browser Anda.
 
 | No | Skenario | Hasil yang diharapkan | Status |
 |---|---|---|---|
-| 1 | Buka Home dan klik menu | Semua halaman terbuka, menu aktif ditandai | [ ] |
-| 2 | Katalog: cari "kemeja", filter kategori, urut harga | Daftar produk menyesuaikan; pesan kosong bila tidak ada | [ ] |
-| 3 | Product card | Semua card punya gambar, nama, harga, info, tombol | [ ] |
-| 4 | Detail: pilih varian stok habis (mis. Kaos Hitam L) | Tombol ukuran nonaktif | [ ] |
-| 5 | Tambah ke keranjang | Badge keranjang bertambah dan muncul feedback | [ ] |
-| 6 | Keranjang: ubah jumlah, hapus | Subtotal berubah; jumlah tidak melebihi stok; konfirmasi hapus | [ ] |
-| 7 | Checkout tanpa login | Diarahkan untuk masuk/daftar | [ ] |
-| 8 | Checkout: kirim form kosong / email salah | Pesan error spesifik di tiap field | [ ] |
-| 9 | Checkout valid | Total = subtotal + ongkir; order dibuat berstatus PENDING | [ ] |
-| 10 | Pembayaran berhasil | Status PAID, stok produk berkurang | [ ] |
-| 11 | Pembayaran gagal, bayar ulang, waktu habis | PAYMENT_FAILED, kembali PENDING, atau CANCELLED | [ ] |
-| 12 | Proses, kirim, terima | PROCESSING, SHIPPED + no. resi, COMPLETED | [ ] |
-| 13 | Ubah lebar layar (desktop, tablet, mobile) | Layout tetap terbaca, menu menjadi hamburger | [ ] |
+| 1 | Buka Home dan klik menu | Semua halaman terbuka, menu aktif ditandai | [✅ ] |
+| 2 | Katalog: cari "kemeja", filter kategori, urut harga | Daftar produk menyesuaikan; pesan kosong bila tidak ada | [✅ ] |
+| 3 | Product card | Semua card punya gambar, nama, harga, info, tombol | [✅ ] |
+| 4 | Detail: pilih varian stok habis (mis. Kaos Hitam L) | Tombol ukuran nonaktif | [✅ ] |
+| 5 | Tambah ke keranjang | Badge keranjang bertambah dan muncul feedback | [✅ ] |
+| 6 | Keranjang: ubah jumlah, hapus | Subtotal berubah; jumlah tidak melebihi stok; konfirmasi hapus | [✅ ] |
+| 7 | Checkout tanpa login | Diarahkan untuk masuk/daftar | [✅ ] |
+| 8 | Checkout: kirim form kosong / email salah | Pesan error spesifik di tiap field | [✅ ] |
+| 9 | Checkout valid | Total = subtotal + ongkir; order dibuat berstatus PENDING | [✅ ] |
+| 10 | Pembayaran berhasil | Status PAID, stok produk berkurang | [✅ ] |
+| 11 | Pembayaran gagal, bayar ulang, waktu habis | PAYMENT_FAILED, kembali PENDING, atau CANCELLED | [✅ ] |
+| 12 | Proses, kirim, terima | PROCESSING, SHIPPED + no. resi, COMPLETED | [✅ ] |
+| 13 | Ubah lebar layar (desktop, tablet, mobile) | Layout tetap terbaca, menu menjadi hamburger | [✅ ] |
 
 ## Simulasi Contoh (sesuai Tugas 6, C.2)
 
