@@ -99,7 +99,14 @@ Rani membeli 2 Kaos Oversize Polos Hitam M (Rp85.000) dan 1 Kemeja Flannel Kotak
 
 ## Screenshot
 
-Tambahkan tangkapan layar halaman utama, katalog, detail produk, keranjang, checkout, dan pesanan di folder `screenshots/`.
+### Home
+![Home](home.png)
+
+### Katalog Produk
+![Katalog Produk](produk.png)
+
+### Keranjang
+![Keranjang](keranjang.png)
 
 ## Catatan Pengembangan Lanjutan
 
